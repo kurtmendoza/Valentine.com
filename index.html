@@ -135,6 +135,7 @@
         document.getElementById("yesBtn").textContent = "Oo na!";
         document.getElementById("noBtn").textContent = "No...";
       } else if (noClickCount > 2) {
+        document.getElementById("noBtn").textContent = "Ayoko";
         yesScale += 0.2;
         yesBtn.style.transform = `scale(${yesScale})`;
         yesBtn.style.transition = "0.3s";
@@ -158,4 +159,5 @@
 
 </body>
 </html>
+
 
