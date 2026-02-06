@@ -128,14 +128,15 @@
         document.getElementById("logo").src = "mad.png";
         document.getElementById("title").textContent = "Anong NO ka jan!?";
         document.getElementById("message").textContent = "I'm gonna ask you again, will you be my valentine?";
+        document.getElementById("yesBtn").textContent = "Yes!";
+        document.getElementById("noBtn").textContent = "No...";
       } else if (noClickCount === 2) {
         document.getElementById("logo").src = "cry.png";
         document.getElementById("title").textContent = "Hindi mo na ako love 😢";
         document.getElementById("message").textContent = "Pls pls pls by sabrina carpinter be my valentine?";
         document.getElementById("yesBtn").textContent = "Oo na!";
-        document.getElementById("noBtn").textContent = "No...";
-      } else if (noClickCount > 2) {
         document.getElementById("noBtn").textContent = "Ayoko";
+      } else if (noClickCount > 2) {
         yesScale += 0.2;
         yesBtn.style.transform = `scale(${yesScale})`;
         yesBtn.style.transition = "0.3s";
@@ -159,5 +160,4 @@
 
 </body>
 </html>
-
 
